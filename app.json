@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "PrepMate AI",
+    "slug": "prepmate-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#6C63FF" } }
+  }
+}
