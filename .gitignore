@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+functions/node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+*.orig.*
+
+# Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+ios/
+android/
+
+# Metro
+.metro-health-check*
+
+# Build output
+functions/lib/
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+*serviceAccount*.json
+google-services.json
+GoogleService-Info.plist
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+
+# IDE
+*.log
+.idea/
+*.tsbuildinfo
+
+# Testing
+coverage/
