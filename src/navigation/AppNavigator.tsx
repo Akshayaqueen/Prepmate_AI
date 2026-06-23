@@ -21,6 +21,8 @@ import SettingsScreen from '../screens/SettingsScreen';
 import AchievementsScreen from '../screens/AchievementsScreen';
 import RoadmapScreen from '../screens/RoadmapScreen';
 import AnalyticsScreen from '../screens/AnalyticsScreen';
+import QuestionLibraryScreen from '../screens/QuestionLibraryScreen';
+import CheatsheetsScreen from '../screens/CheatsheetsScreen';
 import { Industry, ExperienceLevel, ConfidenceCategory, Persona, Difficulty, QuestionType } from '../types';
 
 export type AuthStackParamList = {
@@ -66,6 +68,8 @@ export type MainStackParamList = {
   Achievements: undefined;
   Roadmap: undefined;
   Analytics: undefined;
+  QuestionLibrary: undefined;
+  Cheatsheets: undefined;
 };
 
 const AuthStack = createNativeStackNavigator<AuthStackParamList>();
@@ -139,6 +143,8 @@ function MainNavigator() {
       <MainStack.Screen name="Achievements" component={AchievementsScreen} />
       <MainStack.Screen name="Roadmap" component={RoadmapScreen} />
       <MainStack.Screen name="Analytics" component={AnalyticsScreen} />
+      <MainStack.Screen name="QuestionLibrary" component={QuestionLibraryScreen} />
+      <MainStack.Screen name="Cheatsheets" component={CheatsheetsScreen} />
     </MainStack.Navigator>
   );
 }

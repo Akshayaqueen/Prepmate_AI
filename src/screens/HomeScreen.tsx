@@ -159,6 +159,30 @@ export default function HomeScreen() {
             <MaterialCommunityIcons name="chevron-right" size={24} color={palette.mist} />
           </Surface>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate('QuestionLibrary')}>
+          <Surface style={[styles.navCard, { backgroundColor: c.surface, borderColor: c.border, borderLeftColor: palette.green }]} elevation={0}>
+            <View style={[styles.navIcon, { backgroundColor: palette.green + '1A' }]}>
+              <MaterialCommunityIcons name="bookshelf" size={24} color={palette.green} />
+            </View>
+            <View style={styles.navTextWrap}>
+              <Text style={[styles.navTitle, { color: c.text }]}>Question Library</Text>
+              <Text style={[styles.navSubtitle, { color: c.textMuted }]}>{role.short} FAQs + aptitude</Text>
+            </View>
+            <MaterialCommunityIcons name="chevron-right" size={24} color={palette.mist} />
+          </Surface>
+        </Pressable>
+        <Pressable onPress={() => navigation.navigate('Cheatsheets')}>
+          <Surface style={[styles.navCard, { backgroundColor: c.surface, borderColor: c.border, borderLeftColor: palette.amber }]} elevation={0}>
+            <View style={[styles.navIcon, { backgroundColor: palette.amber + '1A' }]}>
+              <MaterialCommunityIcons name="file-document-multiple" size={24} color={palette.amber} />
+            </View>
+            <View style={styles.navTextWrap}>
+              <Text style={[styles.navTitle, { color: c.text }]}>Cheatsheets</Text>
+              <Text style={[styles.navSubtitle, { color: c.textMuted }]}>Quick reference for {role.short}</Text>
+            </View>
+            <MaterialCommunityIcons name="chevron-right" size={24} color={palette.mist} />
+          </Surface>
+        </Pressable>
       </FadeInView>
 
       {/* 4. Daily Challenge */}
