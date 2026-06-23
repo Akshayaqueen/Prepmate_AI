@@ -23,6 +23,7 @@ import RoadmapScreen from '../screens/RoadmapScreen';
 import AnalyticsScreen from '../screens/AnalyticsScreen';
 import QuestionLibraryScreen from '../screens/QuestionLibraryScreen';
 import CheatsheetsScreen from '../screens/CheatsheetsScreen';
+import CodingPracticeScreen from '../screens/CodingPracticeScreen';
 import { Industry, ExperienceLevel, ConfidenceCategory, Persona, Difficulty, QuestionType } from '../types';
 
 export type AuthStackParamList = {
@@ -70,6 +71,7 @@ export type MainStackParamList = {
   Analytics: undefined;
   QuestionLibrary: undefined;
   Cheatsheets: undefined;
+  CodingPractice: undefined;
 };
 
 const AuthStack = createNativeStackNavigator<AuthStackParamList>();
@@ -145,6 +147,7 @@ function MainNavigator() {
       <MainStack.Screen name="Analytics" component={AnalyticsScreen} />
       <MainStack.Screen name="QuestionLibrary" component={QuestionLibraryScreen} />
       <MainStack.Screen name="Cheatsheets" component={CheatsheetsScreen} />
+      <MainStack.Screen name="CodingPractice" component={CodingPracticeScreen} />
     </MainStack.Navigator>
   );
 }

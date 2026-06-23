@@ -183,6 +183,18 @@ export default function HomeScreen() {
             <MaterialCommunityIcons name="chevron-right" size={24} color={palette.mist} />
           </Surface>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate('CodingPractice')}>
+          <Surface style={[styles.navCard, { backgroundColor: c.surface, borderColor: c.border, borderLeftColor: palette.pink }]} elevation={0}>
+            <View style={[styles.navIcon, { backgroundColor: palette.pink + '1A' }]}>
+              <MaterialCommunityIcons name="code-tags" size={24} color={palette.pink} />
+            </View>
+            <View style={styles.navTextWrap}>
+              <Text style={[styles.navTitle, { color: c.text }]}>Coding Practice</Text>
+              <Text style={[styles.navSubtitle, { color: c.textMuted }]}>Solve problems in a code editor</Text>
+            </View>
+            <MaterialCommunityIcons name="chevron-right" size={24} color={palette.mist} />
+          </Surface>
+        </Pressable>
       </FadeInView>
 
       {/* 4. Daily Challenge */}
